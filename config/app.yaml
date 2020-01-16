@@ -1,0 +1,17 @@
+application: gogin-graphql-boilerplate
+version: 1
+runtime: go113
+api_version: go1
+
+handlers:
+ - url: /.*
+   script: _go_app
+
+
+mysql:
+ name: mysql
+ user: test
+ password: 12345
+ host: 127.0.0.1
+ port: 3306
+ dbname: gogin-graphql-boilerplate
