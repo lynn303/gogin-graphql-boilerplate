@@ -6,7 +6,7 @@
  * @History:
  *  1.[2020-01-16-9:58] new created
  */
-package gogin_graphql_boilerplate
+package main
 
 import "gogin-graphql-boilerplate/app/router"
 
