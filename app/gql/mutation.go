@@ -8,9 +8,15 @@
  */
 package gql
 
-import "github.com/graphql-go/graphql"
+import (
+	"github.com/graphql-go/graphql"
+	"gogin-graphql-boilerplate/app/gql/schema"
+)
 
 var rootMutation = graphql.NewObject(graphql.ObjectConfig{
-	Name:   "Mutation",
-	Fields: graphql.Fields{},
+	Name: "Mutation",
+	Fields: graphql.Fields{
+		"userAop": &schema.UserAop,
+		"userDel": &schema.UserDel,
+	},
 })

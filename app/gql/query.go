@@ -8,9 +8,14 @@
  */
 package gql
 
-import "github.com/graphql-go/graphql"
+import (
+	"github.com/graphql-go/graphql"
+	"gogin-graphql-boilerplate/app/gql/schema"
+)
 
 var rootQuery = graphql.NewObject(graphql.ObjectConfig{
-	Name:   "Query",
-	Fields: graphql.Fields{},
+	Name: "Query",
+	Fields: graphql.Fields{
+		"userList": &schema.UserList,
+	},
 })
